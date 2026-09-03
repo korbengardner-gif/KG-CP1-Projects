@@ -19,18 +19,22 @@ else:
             try:
                 class45 = float(input("What is your grade in 4th/5th period: "))
             except:
-                class6 = float(input("What is your grade in 6th period: "))
+                ("That's not a number!")
             else:
                 try:
-                    class7 = float(input("What is your grade in 7th period: "))
+                    class6 = float(input("What is your grade in 6th period: "))
                 except:
-                    ("That's not a number!")
+                        ("That's not a number")
                 else:
                     try:
-                        class8 = float(input("What is your grade in 8th period: "))
+                        class7 = float(input("What is your grade in 7th period: "))
                     except:
                         ("That's not a number!")
                     else:
+                        try:
+                            class8 = float(input("What is your grade in 8th period: "))
+                        except:
+                            ("That's not a number!")
                     
 
 
