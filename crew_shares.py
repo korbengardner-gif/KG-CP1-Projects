@@ -20,3 +20,8 @@ print(f"Yondu took {yondu_cut} units.")
 after_yonducut = units - yondu_cut
 print(f"There are now {after_yonducut} units.")
 
+peter_cut = round(after_yonducut * 0.11)
+print(f"Peter took {peter_cut} units.")
+
+after_petercut = after_yonducut - peter_cut
+print(f"There are now {after_petercut} units.")
