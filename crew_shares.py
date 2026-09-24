@@ -1,7 +1,7 @@
 #KG crew shares assignment
 import random
 
-start_units = random.randint(5000000,5000000000)
+start_units = random.randint(50000,500000)
 
 while True:
     try:
@@ -12,11 +12,22 @@ while True:
         break
 
 units = start_units - crew * 3
-print(f"There are {units} units!")
 
 yondu_cut = round(units * 0.13, 2)
-print(f"Yondu took {yondu_cut} units.")
 
 after_yonducut = units - yondu_cut
-print(f"There are now {after_yonducut} units.")
 
+peter_cut = round(after_yonducut * 0.11)
+
+after_petercut = after_yonducut - peter_cut
+
+crew_share = round(after_petercut / (crew + 2))
+
+yondu_total =  yondu_cut + crew_share
+peter_total =  peter_cut + crew_share
+
+print(f"There are {crew + 2} pirates.")
+print(f"They have {units} units.")
+print(f"Yondu gets {yondu_total} units!")
+print(f"Peter gets {peter_total} units!")
+print(f"The rest of the crew gets {crew_share + 3} units!")
