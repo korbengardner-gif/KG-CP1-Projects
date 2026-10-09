@@ -13,7 +13,7 @@ while True:
         else:
             if num == 0:
                 print()
-                print("0 = 1")
+                print("0! = 1")
             else:
                 break
 numbers = list(range(num, 0, -1))
