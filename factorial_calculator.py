@@ -2,9 +2,22 @@
 
 
 import math
-
-num = int(input("What number do you want the factorial of: "))
+while True:
+    try:
+        num = int(input("What number do you want the factorial of: \n"))
+    except:
+        print("Put a number!")
+    else:
+        if num <0:
+            print("Nice try buddy.")
+        else:
+            if num == 0:
+                print()
+                print("0 = 1")
+            else:
+                break
 numbers = list(range(num, 0, -1))
-print(*numbers, sep = " x ")
-print(math.factorial(num))
-factorials = []
+factorials = list(map(math.factorial,numbers))
+print()
+for i in range(len(numbers)):
+    print(numbers[i],factorials[i], sep= "! = ")
