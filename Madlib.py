@@ -3,7 +3,7 @@
 
 adjective1 = input("Give me an Adjective: ").strip().title()
 noun1 = input("Give me a Noun: ").strip().title()
-noun2 = input("Give another Noun: ").strip().title()
+noun2 = input("Give me plural Noun: ").strip().title()
 verb1 = input("Give me a Verb that DOESN'T end in ING: ").strip().title()
 adjective2 = input("Give me another Adjective: ").strip().title()
 color = input("Give me a Color: ").strip().title()
