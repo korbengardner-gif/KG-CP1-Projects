@@ -4,13 +4,13 @@
 
 playing = True
 
-
-print("Welcome to my escape room: The Vault of The Vex!")
-print("")
-print("Your Fireteam has been tracking a strange spike in paracausal energy on Nessus. While exploring a network of caves, a shimmering, white-and-bronze geometric portal snaps open, pulling your team into a cold, hyper-advanced labyrinth. The mechanical clicks and radio-static clicks confirm it: you are inside a Vex Simulation Core.")
-print("*Ghost* 'Be careful. One wrong move could have disastrous results")
-
 while playing:
+    print("Welcome to my escape room: The Vault of The Vex!")
+    print("")
+    print("Your Fireteam has been tracking a strange spike in paracausal energy on Nessus. While exploring a network of caves, a shimmering, white-and-bronze geometric portal snaps open, pulling your team into a cold, hyper-advanced labyrinth. The mechanical clicks and radio-static clicks confirm it: you are inside a Vex Simulation Core.")
+    print("*Ghost* 'Be careful. One wrong move could have disastrous results")
+
+
     # trial 1
     print("You stand in a triangular chamber. In the center, a towering glass pillar glows with pulsing white Radiolarian fluid. Three terminal consoles hum in front of it. Your Ghost identifies that you must enter a specific numerical sequence to proceed. Geometric symbols flicker above each console.")
     print("")
@@ -32,7 +32,7 @@ while playing:
         print("Lever A-2: Solar Lever")
         print("Lever A-3: Arc Lever")
         print("")
-        lever = input("Which lever do you pull(1, 2, or 3)\n")
+        lever = int(input("Which lever do you pull(1, 2, or 3)\n"))
         if lever == 1:
             # Trial 3 void lever
             print("")
@@ -42,10 +42,12 @@ while playing:
             print("")
             if portal == "Gold":
                 print("")
-                print("")
+                print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
             elif portal == "Rusty":
                 print("")
-                print("")
+                print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
 
         elif lever == 2:
             # Trial 3 solar lever
@@ -56,10 +58,12 @@ while playing:
             print("")
             if portal == "Gold":
                 print("")
-                print("")
+                print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
             elif portal == "Rusty":
                 print("")
-                print("")
+                print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
 
         elif lever == 3:
             # Trial 3 arc lever
@@ -71,9 +75,11 @@ while playing:
             if portal == "Gold":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
             elif portal == "Rusty":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                
 
         else:
             print("Invalid input. The Vex barrier  moves towards and cuts your body into millions of peices.")
@@ -90,7 +96,7 @@ while playing:
         print("Lever B-2: Solar Lever")
         print("Lever B-3: Arc Lever")
         print("")
-        lever = input("Which lever do you pull(1, 2, or 3)\n")
+        lever = int(input("Which lever do you pull(1, 2, or 3)\n"))
 
         if lever == 1:
             # Trial 3 void lever
@@ -149,7 +155,7 @@ while playing:
         print("Lever C-2: Solar Lever")
         print("Lever C-3: Arc Lever")
         print("")
-        lever = input("Which lever do you pull(1, 2, or 3)\n")
+        lever = int(input("Which lever do you pull(1, 2, or 3)\n"))
 
         if lever == 1:
             # Trial 3 void lever
@@ -174,7 +180,7 @@ while playing:
             print("")
             if portal == "Gold":
                 print("")
-                print("")
+                print("As you step through the golden Precursor portal, the environment doesn't collapse. By entering the exact planetoid coordinates, aligning them with the intense heat of Solar energy, and choosing the prime timeline gateway, you find the Vex's single mathematical anomaly. Your Ghost successfully hacks the core, blasting your Fireteam out of the network and back onto the surface of Nessus. You emerge victorious, clutching a cache of high-tier, simulated Vex weaponry.")
             elif portal == "Rusty":
                 print("")
                 print("")
