@@ -1,14 +1,16 @@
 #KG escape room assignment
 
-
+GREEN = '\033[32m'
+BLUE = '\033[34m'
 
 playing = True
 
 while playing:
-    print("Welcome to my escape room: The Vault of The Vex!")
+    print(GREEN + "Welcome to my escape room: The Vault of The Vex!")
     print("")
     print("Your Fireteam has been tracking a strange spike in paracausal energy on Nessus. While exploring a network of caves, a shimmering, white-and-bronze geometric portal snaps open, pulling your team into a cold, hyper-advanced labyrinth. The mechanical clicks and radio-static clicks confirm it: you are inside a Vex Simulation Core.")
     print("*Ghost* 'Be careful. One wrong move could have disastrous results")
+    print("")
 
 
     # trial 1
@@ -43,10 +45,13 @@ while playing:
             if portal == "Gold":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
+                
                 
             elif portal == "Rusty":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
                 
 
         elif lever == 2:
@@ -54,15 +59,17 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
                 
             elif portal == "Rusty":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
                 
 
         elif lever == 3:
@@ -70,15 +77,17 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
                 
             elif portal == "Rusty":
                 print("")
                 print("As you step through the portal, the Traveler's frequency you inputted back in Trial 1 overloads the Vex architecture. The simulation violently destabilizes, freezing your Fireteam mid-stride. You are locked into an infinite loop, transformed forever into living statues of stone and brass within the network.")
+                print("")
                 
 
         else:
@@ -103,13 +112,15 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
             elif portal == "Rusty":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
 
         elif lever == 2:
@@ -117,13 +128,15 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
             elif portal == "Rusty":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
 
         elif lever == 3:
@@ -131,13 +144,15 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
             elif portal == "Rusty":
                 print("")
+                print("By using standard binary code in the first trial, you blended too perfectly into the Vex mainframe. The Simulation Core deems your Light uninspired and completely assimilates your Ghosts. Your team watches in horror as your armor pieces together into metallic plating, slowly transforming you into Vex Goblins.")
                 print("")
 
         else:
@@ -162,13 +177,15 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
+                print("You used the correct Nessus coordinates, but your subsequent elemental lever or portal choice mismatched the alignment. The portal floor instantly phases out beneath your feet, dropping your Fireteam directly into a blinding sea of white Radiolarian fluid. Your armor melts away, and your consciousness is uploaded to the Vex network as a permanent error log.")
                 print("")
             elif portal == "Rusty":
                 print("")
+                print("You used the correct Nessus coordinates, but your subsequent elemental lever or portal choice mismatched the alignment. The portal floor instantly phases out beneath your feet, dropping your Fireteam directly into a blinding sea of white Radiolarian fluid. Your armor melts away, and your consciousness is uploaded to the Vex network as a permanent error log.")
                 print("")
 
         elif lever == 2:
@@ -176,13 +193,18 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
                 print("As you step through the golden Precursor portal, the environment doesn't collapse. By entering the exact planetoid coordinates, aligning them with the intense heat of Solar energy, and choosing the prime timeline gateway, you find the Vex's single mathematical anomaly. Your Ghost successfully hacks the core, blasting your Fireteam out of the network and back onto the surface of Nessus. You emerge victorious, clutching a cache of high-tier, simulated Vex weaponry.")
+                print("")
+                print("Thanks For Playing!")
+                print("")
+                playing = False
             elif portal == "Rusty":
                 print("")
+                print("You used the correct Nessus coordinates, but your subsequent elemental lever or portal choice mismatched the alignment. The portal floor instantly phases out beneath your feet, dropping your Fireteam directly into a blinding sea of white Radiolarian fluid. Your armor melts away, and your consciousness is uploaded to the Vex network as a permanent error log.")
                 print("")
 
         elif lever == 3:
@@ -190,13 +212,15 @@ while playing:
             print("")
             print("The grid drops. You sprint into a massive chasm. Floating in the air are two massive, shimmering portals. One glows with a Precursor Vex theme (Shining Gold and White), and the other glows with a Descendant Vex theme (Rusty, Ancient Metal).")
             print("")
-            portal = input("Which Portal do you choose, Gold or Rusty\n")
+            portal = input("Which Portal do you choose, Gold or Rusty\n").capitalize()
             print("")
             if portal == "Gold":
                 print("")
+                print("You used the correct Nessus coordinates, but your subsequent elemental lever or portal choice mismatched the alignment. The portal floor instantly phases out beneath your feet, dropping your Fireteam directly into a blinding sea of white Radiolarian fluid. Your armor melts away, and your consciousness is uploaded to the Vex network as a permanent error log.")
                 print("")
             elif portal == "Rusty":
                 print("")
+                print("You used the correct Nessus coordinates, but your subsequent elemental lever or portal choice mismatched the alignment. The portal floor instantly phases out beneath your feet, dropping your Fireteam directly into a blinding sea of white Radiolarian fluid. Your armor melts away, and your consciousness is uploaded to the Vex network as a permanent error log.")
                 print("")
 
         else:
