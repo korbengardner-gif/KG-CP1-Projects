@@ -42,7 +42,7 @@ average = round(total / rounds,1)
 print("Your average guesses per round was " + str(average))
 
 best_round = scores[0]
-for i in range(1, rounds + 1):#logic error, the range was ignoring the second and third rounds, but now it includes them
+for i in range(0, rounds):#logic error, the range is now 0 to 4 and doesn't include 4
     if scores[i] < best_round:
         best_round = scores[i]
 
