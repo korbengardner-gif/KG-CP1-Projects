@@ -57,20 +57,25 @@ while True:
                 
     
 
-    print(f"Password strength score: {score}/5")
-    print("Breakdown:")
+    print(f"\nPassword strength score: {score}/5\n")
+    print("Breakdown:\n")
     for line in feedback:
-        print(line)
+        print(f"{line}\n")
     print()  # Empty line for spacing
                 
     if score > 5:
         print("[ERROR] HOW DID YOU DO THAT?! You have broken the laws of mathematics via the power of konami! Please repent for getting the impossible score and don’t tell anyone about this or else...")
         print("-" * 30) #this will add a line so it looks nice
                 
-    elif score in(3, 4, 5):
-        print("Excellent! Your password is secure enough.")
+    elif score == 3:
+        print("Your password is moderate.")
         break  
-                
+    elif score == 4:
+        print("Your password is strong.")
+        break   
+    elif score == 5:
+        print("Your password is perfect!")
+        break  
     elif score in(1, 2):
         print("That password is too weak. Please try again and make it stronger!")
         print("-" * 30)
