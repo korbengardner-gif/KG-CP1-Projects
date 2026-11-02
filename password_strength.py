@@ -11,11 +11,11 @@ while True:
 
     password =input("Create a password and I'll check its strength:\n")
 
-    # konami code easter egg
+    # ----------------------------------------------------konami code easter egg----------------------------------------------------
     if password.strip() == "^^vv<><>ba":
             score = 6
 
-    # 1. Check length
+    # ----------------------------------------------------1. Check length----------------------------------------------------
 
     if len(password) >= 8:
         score += 1
@@ -23,7 +23,7 @@ while True:
     else:
         feedback.append("Needs to be at least 8 characters long")
                 
-    # 2. Check for uppercase
+    # ----------------------------------------------------2. Check for uppercase----------------------------------------------------
 
     if any(char.isupper() for char in password):
         score += 1 
@@ -31,7 +31,7 @@ while True:
     else:
         feedback.append("Missing an uppercase letter")
                 
-    # 3. Check for lowercase
+    # ----------------------------------------------------3. Check for lowercase----------------------------------------------------
 
     if any(char.islower() for char in password):
         score += 1
@@ -39,7 +39,7 @@ while True:
     else:
         feedback.append("Missing a lowercase letter")
                 
-    # 4. Check for special characters
+    # ----------------------------------------------------4. Check for special characters----------------------------------------------------
 
     if any(char in string.punctuation for char in password):
         score += 1
@@ -47,7 +47,7 @@ while True:
     else:
         feedback.append("Missing a special character")
                 
-    # 5. Check for numbers
+    # ----------------------------------------------------5. Check for numbers----------------------------------------------------
 
     if any(char.isdigit() for char in password):
         score += 1
