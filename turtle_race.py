@@ -54,6 +54,7 @@ time.sleep(1)
 finish_line.hideturtle() #Draw their finish line
 finish_line.goto(400, 400)
 finish_line.down()
+finish_line.pensize(15)
 finish_line.color("white")
 finish_line.goto(400, -400)
 
@@ -85,7 +86,7 @@ while race_in_progress:
             winner_name = c.pencolor().capitalize() 
             message = f"{winner_name} Won the Race!"
             writer.color(c.pencolor()) 
-            writer.write(message, align="center", font=("Arial", 28, "bold"))
+            writer.write(message, align="center", font=("Arial", 36, "bold"))
             #end the race
             race_in_progress = False
             break
