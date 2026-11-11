@@ -5,7 +5,7 @@ import turtle as t
                 """
 
 
-window = t.Screen()
+"""window = t.Screen()
 window.bgcolor("black")
 t.showturtle()
 
@@ -17,4 +17,19 @@ for steps in range(100):
         t.forward(steps)
         t.right(30)
 
-t.exitonclick()
+t.exitonclick()"""
+
+purple = 0
+yellow = 0
+tRue = True
+true = True
+
+
+while tRue:
+    while true:
+        print("E")
+        purple += 1
+        if purple == 9:
+            true = False
+            break
+    print("A") 
