@@ -37,19 +37,19 @@ red.up()
 orange.up()
 cyan.up()
 
-green.goto(-500, 250) # RACERS To Your Positions! 
+green.goto(-800, 300) # RACERS To Your Positions! 
 green.shapesize(3,3)
 green.color("green")
-blue.goto(-500, 125)
+blue.goto(-800, 150)
 blue.shapesize(3,3)
 blue.color("blue")
-cyan.goto(-500, 0)
+cyan.goto(-800, 0)
 cyan.shapesize(3,3)
 cyan.color("cyan")
-red.goto(-500, -125)
+red.goto(-800, -150)
 red.shapesize(3,3)
 red.color("red")
-orange.goto(-500, -250)
+orange.goto(-800, -300)
 orange.shapesize(3,3)
 orange.color("orange")
 
@@ -60,8 +60,12 @@ finish_line.hideturtle() #Draw their finish line
 finish_line.goto(400, 400)
 finish_line.down()
 finish_line.pensize(15)
+
 finish_line.color("white")
+finish_line.goto(400, 0)
+finish_line.color("black")
 finish_line.goto(400, -400)
+
 
 green.down()
 blue.down()
@@ -73,7 +77,7 @@ cyan.down()
 writer = t.Turtle()
 writer.hideturtle()
 writer.penup()
-writer.goto(0, 250) # this moves him to the top center of the screen
+writer.goto(0, 320) # this moves him to the top center of the screen
 
 
 
@@ -91,7 +95,7 @@ while race_in_progress:
             winner_name = c.pencolor().capitalize() 
             message = f"{winner_name} Won the Race!"
             writer.color(c.pencolor()) 
-            writer.write(message, align="center", font=("Arial", 36, "bold"))
+            writer.write(message, align="center", font=("Times new roman", 36, "bold"))
             #end the race
             race_in_progress = False
             break

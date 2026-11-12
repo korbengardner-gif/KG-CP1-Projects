@@ -1,9 +1,8 @@
 #Korben Gardner random code thingies
 import turtle as t
 
-"""def typer_print(text: str, end = "\n"):
-                """
-
+"""
+def typer_print(text: str, end = "\n"):"""
 
 """window = t.Screen()
 window.bgcolor("black")
@@ -19,7 +18,7 @@ for steps in range(100):
 
 t.exitonclick()"""
 
-purple = 0
+"""purple = 0
 yellow = 0
 tRue = True
 true = True
@@ -32,4 +31,15 @@ while tRue:
         if purple == 9:
             true = False
             break
-    print("A") 
+    print("A")
+    yellow += 1
+    if yellow == 9:
+        tRue = False
+        break"""
+
+""""""
+
+"""
+"""
+
+
