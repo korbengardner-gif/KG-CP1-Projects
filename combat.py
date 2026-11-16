@@ -19,19 +19,43 @@ def user_turn():
     if action == "Attack":
         attack = input("Pick an attack\n\nPunch\n\nKick\n\nFireball\n\n").title()
         if attack == "Punch":
-            return "damage5"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 10:
+                return "damage5"
+            else:
+                return "fail"
         elif attack == "Kick":
-            return "damage10"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 15:
+                return "damage10"
+            else:
+                return "fail"
         elif attack == "Fireball":
-            return "damage25"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 18:
+                return "damage25"
+            else:
+                return "fail"
         else:
             print("Not an option")
     elif action == "Block":
-        return "block"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 10:
+                return "block"
+            else:
+                return "fail"
     elif action == "Heal":
-        return "heal"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 10:
+                return "heal"
+            else:
+                return "fail"
     elif action == "Flee":
-        return "flee"
+            fail_chance = r.randint(1,20)
+            if fail_chance >= 10:
+                return "flee"
+            else:
+                return "fail"
     else:
         print("Thats not an option")
 
@@ -50,7 +74,7 @@ intro = True #I want to have the intro in a seperate loop so they can choose to 
 
 while intro:
     t.sleep(1)
-    print("Welcome to combat training!\nYou will fight my champion to test your skills.\nHeal to stay alive.\nYou can back out whenever you want.")
+    print("Welcome to combat training!\nYou will fight my champion to test your skills.\nHeal to stay alive.\nYou can back out whenever you want. You start with 25 and the enemy starts with 40 health. Each action has a different chance to fail.")
     t.sleep(5)
     print("Time to Fight!\n")
     t.sleep(1)
@@ -93,6 +117,8 @@ while intro:
             t.sleep(2)
             fighting = False
             break
+        elif user_action == "fail": #Failed move function
+            print("It Failed!")
         else:
             print("Thats not an option. Now the enemy has a chance to attack.") #if they input they wrong thing in the function, it just cancels their turn
             t.sleep(2)
