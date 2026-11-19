@@ -1,5 +1,6 @@
 #Korben Gardner random code thingies
 import turtle as t
+import time as t
 
 """
 def typer_print(text: str, end = "\n"):"""
@@ -45,7 +46,7 @@ while tRue:
 
 # collecton of key and value pairs
 
-car = {
+"""car = {
     #Key: Value
     "make": "Jeep",
     "model": "Wrangler",
@@ -93,4 +94,4 @@ avatar = {
 
 print(avatar["Fire"]["Iroh"])
 print(avatar.get("Earth").get("Cabbage Merchant"))
-print(avatar["Water"]["Sokka"])
+print(avatar["Water"]["Sokka"])"""
