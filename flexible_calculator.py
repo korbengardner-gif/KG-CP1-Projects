@@ -15,7 +15,7 @@ def number_sum(*args):
 
 def number_average(*args):
     """Calculates the average"""
-    return s.mean(args)
+    return round(s.mean(args), 2)
 
 def number_max(*args):
     """Calculates the biggest"""
@@ -59,7 +59,7 @@ valid_operations = ("sum", "average", "biggest", "smallest", "product")
 Calculator_on = True
 while Calculator_on:
     
-    print("Welcome to the Flexible Calculator!\n\n")
+    print("\nWelcome to the Flexible Calculator!\n\n")
     print("Available operations: sum, average, biggest, smallest, product\n\n")
     calculate = input("Which operation would you like to perform?\n").strip().lower()
     if calculate not in valid_operations:
@@ -70,24 +70,33 @@ while Calculator_on:
             answer = number_sum(*numbers)
             if answer.is_integer():
                 answer = int(answer)
-            print(answer)
+            print(f"Your answer is {answer}\n")
         elif calculate == "average":
             answer = number_average(*numbers)
             if answer.is_integer():
                 answer = int(answer)
-            print(answer)
+            print(f"Your answer is {answer}\n")
         elif calculate == "biggest":
             answer = number_max(*numbers)
             if answer.is_integer():
                 answer = int(answer)
-            print(answer)
+            print(f"Your answer is {answer}\n")
         elif calculate == "smallest":
             answer = number_min(*numbers)
             if answer.is_integer():
                 answer = int(answer)
-            print(answer)
+            print(f"Your answer is {answer}\n")
         elif calculate == "product":
             answer = number_product(*numbers)
             if answer.is_integer():
                 answer = int(answer)
-            print(answer)
+            print(f"Your answer is {answer}\n")
+        continue_calculating = input("Do you want to contuniue? (Y/N)\n").strip().capitalize()
+        while True:
+            if continue_calculating == "Y":
+                continue
+            elif continue_calculating == "N":
+                Calculator_on = False
+                break
+            else:
+                print("Invalid input\n")
