@@ -43,8 +43,6 @@ def get_numbers():
                 print("Please enter at least one number first.")
                 continue
             break
-
-
         try:
             numbr = float(user_input)
             my_numbers.append(numbr)
@@ -54,13 +52,13 @@ def get_numbers():
 
     return my_numbers
 
-valid_operations = ("sum", "average", "biggest", "smallest", "product")
+valid_operations = ("sum", "average", "max", "min", "product")
 
 Calculator_on = True
 while Calculator_on:
     
     print("\nWelcome to the Flexible Calculator!\n\n")
-    print("Available operations: sum, average, biggest, smallest, product\n\n")
+    print("Available operations: sum, average, max, min, product\n\n")
     calculate = input("Which operation would you like to perform?\n").strip().lower()
     if calculate not in valid_operations:
         print("That's not an option. Maybe you typed it wrong.")
@@ -76,12 +74,12 @@ while Calculator_on:
             if answer.is_integer():
                 answer = int(answer)
             print(f"Your answer is {answer}\n")
-        elif calculate == "biggest":
+        elif calculate == "max":
             answer = number_max(*numbers)
             if answer.is_integer():
                 answer = int(answer)
             print(f"Your answer is {answer}\n")
-        elif calculate == "smallest":
+        elif calculate == "min":
             answer = number_min(*numbers)
             if answer.is_integer():
                 answer = int(answer)
@@ -94,9 +92,9 @@ while Calculator_on:
         continue_calculating = input("Do you want to contuniue? (Y/N)\n").strip().capitalize()
         while True:
             if continue_calculating == "Y":
-                continue
+                break
             elif continue_calculating == "N":
                 Calculator_on = False
                 break
             else:
-                print("Invalid input\n")
+                print("Just type y or n, it doesn't work otherwise.\n")
